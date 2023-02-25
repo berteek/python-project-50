@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import hexlet_code.cli as cli
+import gendiff.cli as cli
 
 
 def main():
