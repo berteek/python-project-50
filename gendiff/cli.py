@@ -1,14 +1,34 @@
 import argparse
 
 
-def make_parser():
+def make_arguments(file_path1: str, file_path2: str, format: str='standart') -> dict[str, str]:
+    return {
+        'file_path1': file_path1,
+        'file_path2': file_path2,
+        'format': format
+    }
+
+
+def get_file_path1(args: dict[str, str]) -> str:
+    return args['file_path1']
+
+
+def get_file_path2(args: dict[str, str]) -> str:
+    return args['file_path2']
+
+
+def get_format(args: dict[str, str]) -> str:
+    return args['format']
+
+
+def log(message: str) -> None:
+    print(message)
+
+
+def get_arguments() -> dict[str, str]:
     parser = argparse.ArgumentParser(
         description='Compares two configuration files and shows a difference.'
     )
-    return parser
-
-
-def add_arguments(parser):
     parser.add_argument('first_file')
     parser.add_argument('second_file')
     parser.add_argument(
@@ -16,16 +36,5 @@ def add_arguments(parser):
         metavar='FORMAT',
         help='set format of output'
     )
-
-
-def parse_args(parser):
     args = parser.parse_args()
-    return args
-
-
-def run():
-    parser = make_parser()
-    add_arguments(parser)
-    args = parse_args(parser)
-
-    print(args.first_file, args.second_file)
+    return make_arguments(args.first_file, args.second_file, args.format)

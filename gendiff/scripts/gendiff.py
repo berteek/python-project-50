@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-import gendiff.cli as cli
+from gendiff import run
 
 
 def main():
-    cli.run()
-    print('hello!')
+    run()
 
 
 if __name__ == '__main__':
