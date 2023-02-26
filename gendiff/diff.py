@@ -33,9 +33,8 @@ def find_same(
 
     same = []
     for key in json2:
-        if key in json1:
-            if json1[key] == json2[key]:
-                same.append((key, json1[key]))
+        if key in json1 and json1[key] == json2[key]:
+            same.append((key, json1[key]))
     return same
 
 
@@ -44,9 +43,8 @@ def find_updated(
         json2: dict[str, str]) -> list[tuple[str, str, str]]:
     updated = []
     for key in json2:
-        if key in json1:
-            if json1[key] != json2[key]:
-                updated.append((key, json1[key], json2[key]))
+        if key in json1 and json1[key] != json2[key]:
+            updated.append((key, json1[key], json2[key]))
     return updated
 
 
