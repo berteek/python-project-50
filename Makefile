@@ -17,3 +17,6 @@ package-install:
 
 test:
 	poetry run pytest -v
+
+diff-json:
+	poetry run gendiff ./json/file1.json ./json/file2.json
