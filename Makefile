@@ -35,3 +35,6 @@ test-reporter-sum-coverage:
 
 test-reporter-upload-coverage:
 	./test-reporter-latest-linux-amd64 upload-coverage
+
+coverage:
+	poetry run coverage run -m pytest
