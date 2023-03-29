@@ -24,7 +24,7 @@ def find_removed(
 
     removed = {}
     for key in json1:
-        if not key in json2:
+        if key not in json2:
             removed[key] = json1[key]
     return removed
 
