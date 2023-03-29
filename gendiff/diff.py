@@ -22,8 +22,10 @@ def find_removed(
         json1: dict[str, str],
         json2: dict[str, str]) -> dict[str, str]:
 
-    removed_keys = set(json1.keys()).difference(set(json2.keys()))
-    removed = {key: json1[key] for key in removed_keys}
+    removed = {}
+    for key in json1:
+        if not key in json2:
+            removed[key] = json1[key]
     return removed
 
 
