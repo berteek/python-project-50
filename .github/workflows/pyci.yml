@@ -27,6 +27,7 @@ jobs:
           make test-reporter-before-build
           make lint
           make test
+          make coverage
           make test-reporter-format-coverage
           make test-reporter-sum-coverage
           make test-reporter-upload-coverage
