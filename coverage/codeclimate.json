@@ -1,0 +1,106 @@
+{
+  "ci_service": {
+    "branch": "main",
+    "build_identifier": "",
+    "build_url": "",
+    "commit_sha": "180d78459b82427822527a9f9e11a23c8ecf659f",
+    "committed_at": 1680089472,
+    "name": ""
+  },
+  "environment": {
+    "gem_version": "",
+    "package_version": "",
+    "pwd": "/home/berteek/code/python/python-project-50",
+    "prefix": "/home/berteek/code/python/python-project-50",
+    "rails_root": "",
+    "reporter_version": "0.11.1",
+    "simplecov_root": ""
+  },
+  "git": {
+    "branch": "main",
+    "head": "180d78459b82427822527a9f9e11a23c8ecf659f",
+    "committed_at": 1680089472
+  },
+  "covered_percent": 86.13861386138613,
+  "covered_strength": 0,
+  "line_counts": {
+    "missed": 14,
+    "covered": 87,
+    "total": 101
+  },
+  "source_files": [
+    {
+      "blob_id": "6eeb740086d4f27bd80bb5e255ccaa88ffebf588",
+      "coverage": "[1,1]",
+      "covered_percent": 100,
+      "covered_strength": 1,
+      "line_counts": {
+        "missed": 0,
+        "covered": 2,
+        "total": 2
+      },
+      "name": "gendiff/__init__.py"
+    },
+    {
+      "blob_id": "8af666b23630e0def2986b8eb9d3c2a9eb521d87",
+      "coverage": "[1,null,null,1,null,null,null,1,null,null,null,null,null,null,1,1,null,null,1,1,null,null,1,1,null,null,1,0,null,null,1,0,null,null,null,null,null,0,0,0,null,null,null,null,0,0]",
+      "covered_percent": 61.111111111111114,
+      "covered_strength": 0.6111111111111112,
+      "line_counts": {
+        "missed": 7,
+        "covered": 11,
+        "total": 18
+      },
+      "name": "gendiff/cli.py"
+    },
+    {
+      "blob_id": "3edbebd3de8bb7b18478020efcf5ce29feaed8b0",
+      "coverage": "[1,1,null,null,1,null,null,null,1,1,null,1,1,null,1,1,null,1,null,null,1,null,null,null,1,1,1,null,null,1,null,null,null,1,1,1,1,1,null,null,1,null,null,1,1,1,1,1,null,null,1,null,null,null,1,1,1,null,null,1,null,null,null,null,1,1,null,null,null,null,1,null,null,null,null,1,null,null,null,null,null,1,null,null,null,null,1,1,null,null,1,null,null,null,null,1,null,1,1,1,1,null,1,null,1]",
+      "covered_percent": 100,
+      "covered_strength": 1,
+      "line_counts": {
+        "missed": 0,
+        "covered": 46,
+        "total": 46
+      },
+      "name": "gendiff/diff.py"
+    },
+    {
+      "blob_id": "c652f50a0d5d86daa817c87b38d8d85fc0650a45",
+      "coverage": "[1,1,1,1,null,null,1,0,0,0,0,0,0,null,null,1,0]",
+      "covered_percent": 46.15384615384615,
+      "covered_strength": 0.46153846153846156,
+      "line_counts": {
+        "missed": 7,
+        "covered": 6,
+        "total": 13
+      },
+      "name": "gendiff/main.py"
+    },
+    {
+      "blob_id": "e40d90eb3afd27406ec86b95e62b01b3ce40a1ce",
+      "coverage": "[1,1,null,null,1,1,1,null,null,1,1,1,1,null,null,1,1,null,null,1,1,null,null,1,1,1,1]",
+      "covered_percent": 100,
+      "covered_strength": 1,
+      "line_counts": {
+        "missed": 0,
+        "covered": 17,
+        "total": 17
+      },
+      "name": "tests/test_cli.py"
+    },
+    {
+      "blob_id": "56b900d4723d9a7e33dd35bb86cd157ab2ca88ae",
+      "coverage": "[1,null,null,1,1,1,1]",
+      "covered_percent": 100,
+      "covered_strength": 1,
+      "line_counts": {
+        "missed": 0,
+        "covered": 5,
+        "total": 5
+      },
+      "name": "tests/test_generate_diff.py"
+    }
+  ],
+  "repo_token": ""
+}
