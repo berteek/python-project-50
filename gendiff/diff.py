@@ -91,7 +91,7 @@ def make_diff_string(
 def generate_diff(
         file_path1: str,
         file_path2: str,
-        format: str = "standart") -> str:
+        format: str = "standard") -> str:
 
     json1, json2 = load_jsons(file_path1, file_path2)
 

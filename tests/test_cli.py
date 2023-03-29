@@ -4,7 +4,7 @@ import pytest
 
 @pytest.fixture
 def arguments():
-    return {'file_path1': 'me', 'file_path2': 'you', 'format': 'standart'}
+    return {'file_path1': 'me', 'file_path2': 'you', 'format': 'standard'}
 
 
 def test_make_arguments(arguments):
@@ -22,6 +22,6 @@ def test_get_file_path2(arguments):
 
 
 def test_get_format(arguments):
-    assert 'standart' == cli.get_format(arguments)
+    assert 'standard' == cli.get_format(arguments)
     arguments['format'] = 'fancy'
     assert 'fancy' == cli.get_format(arguments)

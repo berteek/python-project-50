@@ -4,7 +4,7 @@ import argparse
 def make_arguments(
         file_path1: str,
         file_path2: str,
-        format: str = 'standart') -> dict[str, str]:
+        format: str = 'standard') -> dict[str, str]:
     return {
         'file_path1': file_path1,
         'file_path2': file_path2,
