@@ -37,4 +37,4 @@ test-reporter-upload-coverage:
 	./test-reporter-latest-linux-amd64 upload-coverage
 
 coverage:
-	poetry run coverage run -m pytest | poetry run coverage xml
+	poetry run coverage run -m pytest && poetry run coverage xml
