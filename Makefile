@@ -34,7 +34,7 @@ test-reporter-sum-coverage:
 	./test-reporter-latest-linux-amd64 sum-coverage 'coverage/codeclimate.json'
 
 test-reporter-upload-coverage:
-	./test-reporter-latest-linux-amd64 upload-coverage
+	./test-reporter-latest-linux-amd64 upload-coverage -r $CC_TEST_REPORTER_ID
 
 coverage:
 	poetry run coverage run -m pytest && poetry run coverage xml
