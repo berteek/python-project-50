@@ -31,7 +31,7 @@ test-reporter-format-coverage:
 	./test-reporter-latest-linux-amd64 format-coverage coverage.xml -t coverage.py
 
 test-reporter-sum-coverage:
-	./test-reporter-latest-linux-amd64 sum-coverage
+	./test-reporter-latest-linux-amd64 sum-coverage 'coverage/codeclimate.json'
 
 test-reporter-upload-coverage:
 	./test-reporter-latest-linux-amd64 upload-coverage
