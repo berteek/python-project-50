@@ -30,7 +30,7 @@ jobs:
           make coverage
           make test-reporter-format-coverage
           make test-reporter-sum-coverage
-          make test-reporter-upload-coverage
+          make test-reporter-upload-coverage KEY=${{ secrets.CC_TEST_REPORTER_ID }}
       #- name: Test & publish code coverage
       #  uses: paambaati/codeclimate-action@v3.2.0
       #  if: github.ref_name == 'main'
