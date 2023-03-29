@@ -18,5 +18,20 @@ package-install:
 test:
 	poetry run pytest -v
 
-diff-json:
-	poetry run gendiff ./json/file1.json ./json/file2.json
+test-cov:
+	poetry run pytest --cov=gendiff tests/
+
+test-json:
+	poetry run gendiff ./tests/fixtures/json/file1.json ./tests/fixtures/json/file2.json
+
+test-reporter-before-build:
+	./test-reporter-latest-linux-amd64 before-build
+
+test-reporter-format-coverage:
+	./test-reporter-latest-linux-amd64 format-coverage
+
+test-reporter-sum-coverage:
+	./test-reporter-latest-linux-amd64 sum-coverage
+
+test-reporter-upload-coverage:
+	./test-reporter-latest-linux-amd64 upload-coverage
