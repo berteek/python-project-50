@@ -1,21 +1,15 @@
-import json
+from gendiff.parsing import parse
 from functools import reduce
 
 
-def load_jsons(
+def load_files(
         file_path1: str,
         file_path2: str) -> tuple[dict[str, str], dict[str, str]]:
 
-    file1 = open(file_path1)
-    file2 = open(file_path2)
+    file1 = parse(file_path1)
+    file2 = parse(file_path2)
 
-    json1 = json.load(file1)
-    json2 = json.load(file2)
-
-    file1.close()
-    file2.close()
-
-    return json1, json2
+    return file1, file2
 
 
 def find_removed(
@@ -95,7 +89,7 @@ def generate_diff(
         file_path2: str,
         format: str = "standard") -> str:
 
-    json1, json2 = load_jsons(file_path1, file_path2)
+    json1, json2 = load_files(file_path1, file_path2)
 
     removed = find_removed(json1, json2)
     same = find_same(json1, json2)
