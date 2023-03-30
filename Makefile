@@ -34,9 +34,7 @@ test-reporter-sum-coverage:
 	./test-reporter-latest-linux-amd64 sum-coverage 'coverage/codeclimate.json'
 
 test-reporter-upload-coverage:
-ifdef KEY
 	./test-reporter-latest-linux-amd64 upload-coverage -r KEY
-endif
 
 coverage:
 	poetry run coverage run -m pytest && poetry run coverage xml
